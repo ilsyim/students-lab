@@ -4,14 +4,9 @@ const Student = (props) => {
   return (
     <>
     <div>
-      {props.students.map(student =>
-      <>
-        <h2>Name: {student.name}</h2>
-        <h2>Bio: {student.bio}</h2>
+        <h2>Name: {props.student.name}</h2>
+        <h2>Bio: {props.student.bio}</h2>
         <Score />
-      </>
-        
-        )}
     </div>
     </>
   );

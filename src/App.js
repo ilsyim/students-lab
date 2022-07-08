@@ -1,5 +1,6 @@
 import './App.css';
 import Student from './Student';
+import Score from './Score';
 
 function App() {
   const students = [
@@ -62,11 +63,13 @@ function App() {
     ]
   }
 ]
-
+console.log(students)
   return (
     <>
     <div>
-      <Student students={students}/>
+      {students.map(student =>
+        <Student student={student} key={student.name}/>
+        )}
     </div>
     </>
   );
