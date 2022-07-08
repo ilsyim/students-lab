@@ -1,7 +1,8 @@
-const Score = () => {
+const Score = (props) => {
   return (
     <>
-      this is a score
+      <h4>Date: </h4>
+      <h4>Score: </h4>
     </>
   );
 }
