@@ -1,4 +1,4 @@
-
+import Score from "./Score";
 
 const Student = (props) => {
   return (
@@ -6,9 +6,9 @@ const Student = (props) => {
     <div>
       {props.students.map(student =>
       <>
-      <h2>Name: {student.name}</h2>
-      <h2>Bio: {student.bio}</h2>
-      
+        <h2>Name: {student.name}</h2>
+        <h2>Bio: {student.bio}</h2>
+        <Score />
       </>
         
         )}
